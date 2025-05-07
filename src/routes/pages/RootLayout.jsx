@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom'
-import Header from '../../components/RootLayout/Header'
+import Nav from '../../components/RootLayout/Nav'
 import End from '../../components/RootLayout/End'
 
 const RootLayout = () => {
     return (
         <>
-            <Header />
+            <Nav />
             <main className="mt-[3rem]">
                 <Outlet />
             </main>

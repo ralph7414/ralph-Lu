@@ -6,15 +6,8 @@
 *,
 body {
     font-family: 'Chocolate Classical Sans', sans-serif;
-    /* letter-spacing: 5px;
-    font-weight: 400; */
-    /* padding: 0;
-    margin: 0; */
-
-    /* text-align: center; */
-    /* color: #c3f3f3; */
-    /* line-height: 1.5; */
     box-sizing: border-box;
+    transition: all 0.5s;
 }
 
 html {
@@ -26,27 +19,122 @@ body {
     flex-direction: column;
     height: auto;
     width: 100%;
-
-    /* background-image: url('/img/IMG_Bgc3.png'); */
-    /* background-size: cover;
-    background-attachment: fixed; */
-}
-
-ul :hover {
-    color: #d1a952;
 }
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 600;
-
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #1f1f1c;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    display: grid;
+    /* gap: 8px; */
+    overflow: hidden;
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+    grid-template-areas:
+        'A1 A1 A2 A2 A2 A3'
+        'A1 A1 A2 A2 A2 A4'
+        'A5 A6 A2 A2 A2 A4'
+        'A7 A7 A8 A9 A10 A11'
+        'A7 A7 A12 A13 A13 A14'
+        'A15 A16 A17 A13 A13 A18';
+}
+.item {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    /* background-color: rgb(74, 28, 160); */
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.item01 {
+    grid-area: A1;
+    font-size: 200px;
+}
+.item02 {
+    grid-area: A2;
+    font-size: 280px;
+}
+.item03 {
+    grid-area: A3;
+    font-size: 60px;
+}
+.item04 {
+    grid-area: A4;
+    font-size: 140px;
+    writing-mode: vertical-rl;
+}
+.item05 {
+    grid-area: A5;
+    font-size: 75px;
+}
+.item06 {
+    grid-area: A6;
+}
+.item07 {
+    grid-area: A7;
+    background-color: #58b4d1;
+    color: #034;
+}
+.item08 {
+    grid-area: A8;
+    background-color: #219ebc;
+    color: #034;
+}
+.item09 {
+    grid-area: A9;
+    background-color: #219ebc;
+    color: #034;
+}
+.item10 {
+    grid-area: A10;
+    background-color: #116783;
+    color: #ddd;
+}
+.item11 {
+    grid-area: A11;
+    color: #fff;
+    background-color: #003049;
+}
+.item12 {
+    grid-area: A12;
+    background-color: #116783;
+    color: #ddd;
+}
+.item13 {
+    grid-area: A13;
+    background-color: #219ebc;
+    color: #034;
+}
+.item14 {
+    grid-area: A14;
+    background-color: #219ebc;
+    color: #034;
+}
+.item15 {
+    grid-area: A15;
+    background-color: #58b4d1;
+    color: #034;
+}
+.item16 {
+    grid-area: A16;
+    background-color: #58b4d1;
+    color: #034;
+}
+.item17 {
+    grid-area: A17;
+    background-color: #78c5cf;
+    color: #034;
+}
+.item18 {
+    grid-area: A18;
+    background-color: #a8d4d3;
+    color: #034;
 }

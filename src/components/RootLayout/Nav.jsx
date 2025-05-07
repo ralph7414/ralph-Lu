@@ -3,13 +3,13 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     let nav_link =
-        'text-xl mx-2  duration-400 text-red-800 no-underline hover:underline hover:underline-offset-8 '
+        'text-xl mx-2 duration-400 text-blue-200 no-underline hover:underline hover:underline-offset-8 '
 
     // let nav_active = 'text-lg mx-4 text-yy underline underline-offset-8 '
 
     return (
         <>
-            <nav className=" fixed h-[3rem] bg-red-500 p-2 items-center w-full">
+            <nav className=" fixed h-[3rem] bg-blue-900 p-2 items-center w-full">
                 <ul className="flex justify-between content-center px-32">
                     <li>
                         <Link

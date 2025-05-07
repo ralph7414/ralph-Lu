@@ -1,7 +1,9 @@
 const End = () => {
     return (
         <>
-            <h1 className="text-red-500">End</h1>
+            <footer className="h-40 w-full p-5 bg-blue-950 text-center text-2xl">
+                2025 © Ralph
+            </footer>
         </>
     )
 }
