@@ -89,16 +89,16 @@ body {
     letter-spacing: 5px;
     margin-top: auto;
     margin-bottom: auto;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     display: flex;
     border-radius: 15px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    cursor: pointer;
-    &:hover {
+    cursor: default;
+    /* &:hover {
         background-color: darkblue;
         color: aliceblue;
-    }
+    } */
     @media (width <= 1280px) {
         /* height: auto; */
         padding: 25px;
@@ -111,9 +111,11 @@ body {
 
 .item01 {
     grid-area: A1;
-    @media (width <= 768px) {
-        letter-spacing: 0.5rem;
-        padding: 30px;
+    h2 {
+        @media (width <= 768px) {
+            letter-spacing: 0.5rem;
+            padding: 30px;
+        }
     }
 }
 .item02 {
