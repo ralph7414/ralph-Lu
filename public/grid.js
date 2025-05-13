@@ -1,3 +1,5 @@
+const Y = new Date().getFullYear()
+
 const GridContent = [
     {
         id: '01',
@@ -8,7 +10,7 @@ const GridContent = [
     {
         id: '02',
         defaultText: '羅仁甫',
-        hoverText: '26歲是個無職仔',
+        hoverText: `${Y - 1999} 歲是個阿宅`,
         class: 'text-[14vw] max-xl:text-[7vw] max-md:text-[7vw] ',
     },
     {
@@ -104,7 +106,7 @@ const GridContent = [
     {
         id: '18',
         defaultText: 'JavaScript',
-        hoverText: '網頁程式語言',
+        hoverText: '網頁',
         class: 'text-[2.5vw] max-xl:text-[12vw] max-md:text-[10vw]',
     },
 ]

@@ -42,7 +42,7 @@ const Grid = () => {
                             animate="rest"
                             whileHover="hover"
                             exit={{ opacity: 0 }} // 在元素離開 hover 時不需要延遲
-                            transition={{ opacity: { duration: 0.5 } }} // 動畫時間
+                            transition={{ opacity: { duration: 1 } }} // 動畫時間
                             className="absolute inset-0 flex items-center justify-center z-50 p-3 text-3xl max-xl:text-2xl max-md:text-[1.5rem] "
                         >
                             {item.hoverText.split('\n').map((line, index) => (

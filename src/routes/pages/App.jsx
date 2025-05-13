@@ -6,8 +6,8 @@ const App = () => {
             <header>
                 <Grid />
 
-                <section className="w-full h-[60vh] bg-white">
-                    <h1 className=" text-center text-amber-950 text-6xl pt-52">
+                <section className="w-full h-[60vh] bg-indigo-950">
+                    <h1 className=" text-center text-white text-6xl pt-52">
                         答案一定只存在於對戰之中
                     </h1>
                 </section>
