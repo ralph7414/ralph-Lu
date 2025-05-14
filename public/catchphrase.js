@@ -14,15 +14,15 @@ const CatchPhrase = [
     {
         id: '03',
         name: '游庭皓',
-        text: '投資不看決策，看週期 ',
+        text: '投資不看決策，看週期',
         class: 'text-[6vw] max-xl:text-[12vw] max-md:text-[12vw] ',
     },
     {
         id: '04',
         name: '游庭皓',
-        text: '投資不看決策，看週期 ',
+        text: '投資不看決策，看週期',
         class: 'text-[6vw] max-xl:text-[12vw] max-md:text-[12vw] ',
     },
 ]
 
-export default GridContent
+export default CatchPhrase

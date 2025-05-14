@@ -21,7 +21,7 @@ const Grid = () => {
                         initial="rest"
                         animate="rest"
                         whileHover="hover"
-                        transition={{ duration: 0.3 }}
+                        // transition={{ duration: 0.3 }}
                         // whileTap={{ backgroundColor: '#eee' }}
                         // onHoverStart={() => setIsHover(item.id)}
                         // onHoverEnd={() => setIsHover(null)}
@@ -29,7 +29,7 @@ const Grid = () => {
                         {/* {item.defaultText} */}
 
                         <div
-                            className={`inset-0 flex items-center justify-center ${item.class}  opacity-100 group-hover:opacity-0 transition-opacity duration-300 `}
+                            className={`inset-0 flex items-center justify-center ${item.class} opacity-100 group-hover:opacity-0 transition-opacity duration-300 `}
                         >
                             {item.defaultText}
                         </div>

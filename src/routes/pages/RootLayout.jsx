@@ -6,7 +6,7 @@ const RootLayout = () => {
     return (
         <>
             <Nav />
-            <main className="mt-[2rem] ">
+            <main className="mt-[4rem] ">
                 <Outlet />
             </main>
             <End />

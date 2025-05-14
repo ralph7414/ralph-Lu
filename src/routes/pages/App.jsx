@@ -1,3 +1,4 @@
+import Catch from '../../components/content/Catch'
 import Grid from '../../components/content/Grid'
 
 const App = () => {
@@ -6,14 +7,10 @@ const App = () => {
             <header>
                 <Grid />
 
-                <section className="w-full h-[60vh] bg-indigo-950">
-                    <h1 className=" text-center text-white text-6xl pt-52">
-                        答案一定只存在於對戰之中
-                    </h1>
-                </section>
+                <Catch />
 
                 <section className="flex justify-center items-center w-full h-dvh bg-blue-950">
-                    <h1 className="text-center">123</h1>
+                    123
                 </section>
             </header>
         </>
