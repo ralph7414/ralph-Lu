@@ -186,6 +186,16 @@ body {
     margin-right: 12%;
 }
 
+.userImg {
+    background: url(/public/img/個人照_210411_30_0.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.listSkill {
+    li {
+        font-size: 20px;
+    }
+}
 .circle {
     width: 50px;
     height: 50px;
@@ -193,7 +203,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     background-color: rgba(255, 133, 104, 0.4);
-    margin-top: 10px;
+    margin-top: 20px;
     &::after {
         position: relative;
         content: '';
@@ -203,7 +213,104 @@ body {
         border-radius: 50%;
         left: 50%;
         top: 50%;
-        color: #02005b;
+        background-color: #111;
         transform: translate(-50%, -50%);
     }
+}
+.p90,
+.p180,
+.p270,
+.p360 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: #ff7168;
+}
+.p180 {
+    top: 50%;
+}
+.p270 {
+    left: 0;
+    top: 50%;
+}
+.p360 {
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    width: 50%;
+    height: 10px;
+    border: 2px solid #ff7168;
+    border-radius: 5px;
+}
+.value {
+    height: 100%;
+
+    background-color: #ff7168;
+}
+.listExp {
+    .year {
+        /* display: flex; */
+        padding-bottom: 10px;
+    }
+    ul {
+        li {
+            padding-left: 10px;
+            letter-spacing: 3px;
+            padding-bottom: 3px;
+        }
+    }
+}
+.listExp > li {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.listExp > li:nth-child(1) ul {
+    border-color: #ff7168;
+}
+.listExp > li:nth-child(2) ul {
+    border-color: #ff8868;
+}
+.listExp > li:nth-child(3) ul {
+    border-color: #ffa568;
+}
+.listExp > li:nth-child(4) ul {
+    border-color: #ffb087;
+}
+.listExp > li:nth-child(5) ul {
+    border-color: #ffde9d;
+}
+.listExp > li:nth-child(6) ul {
+    border-color: #f5f38d;
+}
+.listExp > li:nth-child(7) ul {
+    border-color: #d9ff91;
+}
+.listExp > li:nth-child(8) ul {
+    border-color: #8bf0b5;
+}
+.listExp > li:nth-child(9) ul {
+    border-color: #68e8ff;
+}
+
+.listExp li ul {
+    padding-left: 50px;
+    margin-left: 50px;
+    border-left: 4px solid #fff;
+}
+
+@media (width<= 1280px) {
+    .listExp li ul {
+        padding-left: 20px;
+        margin-left: 20px;
+        border-left: 4px solid #fff;
+    }
+}
+.doc {
+    background: linear-gradient(135deg, #ff7168, #ffb087);
 }
