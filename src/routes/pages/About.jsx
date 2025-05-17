@@ -16,8 +16,8 @@ const About = () => {
                                 中原大學商業設計系
                             </h1>
 
-                            <h2 className="text-xl mb-2">電話 0921457678</h2>
-                            <h2 className="text-xl">信箱 ralphlu26516@gmail</h2>
+                            <h3 className="text-xl mb-2">電話 0921457678</h3>
+                            <h3 className="text-xl">信箱 ralphlu26516@gmail</h3>
                         </div>
                     </div>
 
@@ -141,10 +141,10 @@ const About = () => {
                 </aside>
 
                 <article className="w-2/3 h-fit max-xl:w-full overflow-hidden ">
-                    <div className="doc h-52 w-full ml-40  rounded-ss-full max-xl:hidden"></div>
+                    <div className="doc h-52 w-full ml-40  rounded-ss-full absolute max-xl:w-3/4 max-xl:right-0"></div>
 
-                    <main className="mt-8 ml-40 max-xl:ml-0 max-xl:text-center">
-                        <h1 className="text-4xl">自我介紹</h1>
+                    <main className="mt-60 ml-40 max-xl:ml-0 max-xl:text-center ">
+                        <h2 className="text-4xl">自我介紹</h2>
                         <h4 className="text-2xl mb-5 max-xl:mb-10">
                             Self Introduce
                         </h4>
@@ -164,7 +164,7 @@ const About = () => {
 
                     <section className="mt-15 ml-40 max-xl:ml-0 ">
                         <div className="max-xl:text-center">
-                            <h1 className="text-4xl">經歷&學習</h1>
+                            <h2 className="text-4xl">經歷&學習</h2>
                             <h4 className="text-2xl mb-10 max-xl:mb-16">
                                 Experience&Learning
                             </h4>
