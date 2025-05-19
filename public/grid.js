@@ -106,7 +106,7 @@ const GridContent = [
     {
         id: '18',
         defaultText: 'JavaScript',
-        hoverText: '網頁',
+        hoverText: 'console.log("HELLO SEKAI")',
         class: 'text-[2.5vw] max-xl:text-[12vw] max-md:text-[10vw]',
     },
 ]

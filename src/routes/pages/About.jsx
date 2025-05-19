@@ -3,9 +3,20 @@ import { Link } from 'react-router-dom'
 const About = () => {
     return (
         <>
-            {/* <header className="py-5 text-center text-4xl">關於我</header> */}
-            <nav></nav>
-            <section className="flex justify-center mx-40 my-24 max-xl:flex-col max-md:mx-8">
+            <h1 className="mt-[6rem] mb-10 flex justify-center items-center text-6xl tracking-wide">
+                關於我
+            </h1>
+            <nav className="text-center text-3xl mx-auto sticky top-[4rem] z-50">
+                <ul className="flex justify-center bg-[#111]  py-3">
+                    <Link to="/about" className="px-2 mx-10">
+                        自我介紹
+                    </Link>
+                    <Link to="/about?resume" className="px-2 mx-10">
+                        履歷
+                    </Link>
+                </ul>
+            </nav>
+            <section className="flex justify-center mx-40 mt-24 mb-10 max-xl:flex-col max-md:mx-8">
                 <aside className=" w-1/3 max-xl:w-full ">
                     <div className="flex mx-auto justify-center flex-col">
                         <div className="userImg w-52 h-52 bg-sky-900 border-2 rounded-4xl m-auto"></div>

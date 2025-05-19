@@ -23,6 +23,9 @@ import Game from './routes/pages/Game'
 import Note from './routes/pages/Note'
 import Practice from './routes/pages/Practice'
 import About from './routes/pages/About'
+import Website from './components/Protfolio/Website'
+import Work from './components/Protfolio/Work'
+import Video from './components/Protfolio/Video'
 
 const router = createBrowserRouter([
     {
@@ -41,6 +44,11 @@ const router = createBrowserRouter([
             {
                 path: '/portfolio',
                 element: <Portfolio />,
+                children: [
+                    { index: true, element: <Work /> },
+                    { path: 'website', element: <Website /> },
+                    { path: 'video', element: <Video /> },
+                ],
             },
             {
                 path: '/game',

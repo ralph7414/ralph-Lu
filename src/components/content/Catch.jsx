@@ -16,7 +16,7 @@ const Catch = () => {
 
     return (
         <>
-            <section className="w-full h-[60vh] bg-indigo-950 relative overflow-hidden">
+            <section className="w-full h-[60vh] bg-indigo-950 relative overflow-hidden max-sm:h-[40vh]">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={index}
@@ -32,10 +32,10 @@ const Catch = () => {
                         }}
                         className="w-full"
                     >
-                        <div className="text-center text-white text-6xl pt-52">
+                        <div className="text-center text-white text-6xl pt-52 max-sm:text-2xl max-sm:pt-20">
                             {CatchPhrase[index].text}
                         </div>
-                        <h2 className="text-right text-4xl pr-52 pt-20 max-xl:text-center max-xl:pr-0">
+                        <h2 className="text-right text-4xl pr-52 pt-20 max-xl:text-center max-xl:pr-0 max-sm:text-xl">
                             {CatchPhrase[index].name}
                         </h2>
                     </motion.div>

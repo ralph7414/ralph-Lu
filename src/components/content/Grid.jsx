@@ -18,9 +18,13 @@ const Grid = () => {
                             },
                         }}
                         exit={{ x: -10 }}
+                        transition={5}
                         initial="rest"
                         animate="rest"
                         whileHover="hover"
+                        onMouseEnter={() => {
+                            console.log(item.hoverText)
+                        }}
                         // transition={{ duration: 0.3 }}
                         // whileTap={{ backgroundColor: '#eee' }}
                         // onHoverStart={() => setIsHover(item.id)}
@@ -29,7 +33,7 @@ const Grid = () => {
                         {/* {item.defaultText} */}
 
                         <div
-                            className={`inset-0 flex items-center justify-center ${item.class} opacity-100 group-hover:opacity-0 transition-opacity duration-300 `}
+                            className={`inset-0 flex items-center justify-center ${item.class} opacity-100 group-hover:opacity-0 transition-opacity duration-500`}
                         >
                             {item.defaultText}
                         </div>
@@ -42,7 +46,13 @@ const Grid = () => {
                             animate="rest"
                             whileHover="hover"
                             exit={{ opacity: 0 }} // 在元素離開 hover 時不需要延遲
-                            transition={{ opacity: { duration: 1 } }} // 動畫時間
+                            transition={{
+                                opacity: {
+                                    duration: 0.5, // 進入動畫時間
+                                    ease: 'easeInOut',
+                                },
+                                when: 'beforeChildren',
+                            }}
                             className="absolute inset-0 flex items-center justify-center z-50 p-3 text-3xl max-xl:text-2xl max-md:text-[1.5rem] "
                         >
                             {item.hoverText.split('\n').map((line, index) => (
@@ -51,7 +61,12 @@ const Grid = () => {
                                     className="block mb-1"
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.1 * index }}
+                                    exit={{ opacity: 0, y: -10 }}
+                                    transition={{
+                                        delay: 0.5 * index,
+                                        opacity: { duration: 0.5 }, // entrance
+                                        y: { duration: 0.3 },
+                                    }}
                                 >
                                     {line}
                                 </motion.span>
