@@ -17,15 +17,16 @@ import './index.css'
 import RootLayout from './routes/pages/RootLayout'
 import App from './routes/pages/App'
 import Error from './routes/pages/Error'
-
 import Portfolio from './routes/pages/Portfolio'
 import Game from './routes/pages/Game'
 import Note from './routes/pages/Note'
 import Practice from './routes/pages/Practice'
 import About from './routes/pages/About'
+
 import Website from './components/Protfolio/Website'
 import Work from './components/Protfolio/Work'
 import Video from './components/Protfolio/Video'
+import Snack from './components/Game/GameList/Snack'
 
 const router = createBrowserRouter([
     {
@@ -53,6 +54,7 @@ const router = createBrowserRouter([
             {
                 path: '/game',
                 element: <Game />,
+                children: [{ path: 'snack', element: <Snack /> }],
             },
             {
                 path: '/note',

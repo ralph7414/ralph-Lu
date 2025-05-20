@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="fixed h-[4rem] bg-blue-900 p-2 items-center w-full z-10">
+            <nav className="fixed h-[4rem] bg-blue-900 p-2 items-center w-full z-50">
                 <ul className="max-md:hidden flex justify-between content-center px-32 pt-3">
                     <li>
                         <Link
